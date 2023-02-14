@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Josefin+Sans&family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body 
+    {
+        font-family: 'Libre Baskerville', serif;
+        max-width: 960px;
+        background-color: blue;
+        color: ivory;
+        margin: 0 auto;
+    }
+    .specialmargin
+    {
+        margin:0;
+    }
+
+    /*Extra small devices (portrait phones, less than 576px)
+    // No media query since this is the default in Bootstrap
+
+    // Small devices (landscape phones, 576px and up)*/
+    @media (min-width: 576px) 
+    {
+        body
+        {
+            background-color: brown;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+    }
+
+    /* Medium devices (tablets, 768px and up)*/
+    @media (min-width: 768px) 
+    {
+        body
+        {
+            background-color: pink;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    }
+
+    /* Large devices (desktops, 992px and up)*/
+    @media (min-width: 960px) 
+    {
+        body
+        {
+            background-color: green;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    }
+   
+
+    /*Extra large devices (large desktops, 1200px and up)*/
+    @media (min-width: 1200px) {}
+</style>
+
+<body>
+    <header>
+        <h1>The world is yours!</h1>
+    </header>
+    <main>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, totam!</p>
+        <p>Accusamus harum tenetur dolorem ut, a sit aut cumque doloribus.</p>
+        <a href="https://placeholder.com"><img src="https://via.placeholder.com/150"></a>
+        <p>Quia culpa aspernatur quis reprehenderit optio perspiciatis laborum eligendi impedit.</p>
+        <p>Eveniet ratione quod aspernatur placeat unde odio beatae perferendis soluta!</p>
+
+    </main>
+
+</body>
+
+</html>
