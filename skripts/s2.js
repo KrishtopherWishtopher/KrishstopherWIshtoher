@@ -55,39 +55,37 @@ function kindWords()
 
 }
 
-function musicLink() 
-{
-    var a = document.createElement('a'); 
-    
-    
+function musicLink() {
+
+    const musicURL = document.getElementById("musicLinkURL");
+    const musicText = document.getElementById("musicLinkText");
+    musicText.innerHTML = "";
+       
     var random= Math.floor(Math.random() * 11);
     if(random <= 2)
     {
-        var link = document.createTextNode("KING LAMAGRA 222");
-        a.title = "KING LAMAGRA 222";
-        a.href = "https://www.youtube.com/watch?v=3xCq8y7c4Mk"; 
+        musicText.innerHTML = "KING LAMAGRA 222";
+        musicURL.setAttribute('href', 'https://www.youtube.com/watch?v=3xCq8y7c4Mk');
     }
     else if(random > 2 &&random <= 5)
     {
-        var link = document.createTextNode("RCB");
-        a.title = "RCB";
-        a.href = "https://www.youtube.com/watch?v=TIEM6bTPSoU"; 
+        musicText.innerHTML = "RCB";
+        musicURL.setAttribute('href', 'https://www.youtube.com/watch?v=TIEM6bTPSoU');
+
     }
     else if(random > 5 &&random <= 7)
     {
-        var link = document.createTextNode("EvilStarAnthem");
-        a.title = "EvilStarAnthem";
-        a.href = "https://www.youtube.com/watch?v=aoUJYA6uDno";
+        musicText.innerHTML = "EvilStarAnthem";
+        musicURL.setAttribute('href', 'https://www.youtube.com/watch?v=aoUJYA6uDno');
+
     }
     else
     {
-        var link = document.createTextNode("Dimples");
-        a.title = "Dimples";
-        a.href = "https://www.youtube.com/watch?v=pvS24Z6AbIg";
+        musicText.innerHTML = "Dimples";
+        musicURL.setAttribute('href', 'https://www.youtube.com/watch?v=pvS24Z6AbIg');
+
     }
 
-    a.appendChild(link);
-    document.getElementById("newMusic").appendChild(a);    
 }
 
 

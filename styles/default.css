@@ -110,3 +110,45 @@ a:visited
 {
     margin-left: 20%;
 }
+
+.calculator 
+{
+    padding: 10px;
+    border-radius: 1em;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+ }
+    
+.display-box 
+{
+
+    background-color: #FFE1C6;
+    border: solid #001524 1px;
+    color: #5E0B15;
+    border-radius: 10px;
+    width: 100%;
+    height: 65%;
+    text-align: right;
+}
+    
+#calcButton 
+{
+    background-color: #5E548E;
+}
+    
+input[type=button] 
+{
+
+    background-color: #EB9FEF;
+    color: #5E0B15;
+    border: solid #001524 1px;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+}
+
+input:active[type=button] 
+{
+    background: #5E548E;
+}
