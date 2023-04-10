@@ -1,0 +1,144 @@
+*
+{
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+   margin: 0;
+   padding: 0;
+}
+body
+{
+    background-color: #F4DBD8;
+    
+}
+
+header
+{
+    background-color: #D72638;
+    padding: 30px;
+ 
+   color: #F4DBD8;
+   border-bottom: 3px solid #211A1D;
+
+}
+
+/*Container*/
+.row
+{
+    display: flex;
+}
+.column
+{
+    padding:10px;
+}
+.column.side 
+{
+    flex: 1;
+    text-align: center;
+ }
+ 
+ /* Middle column */
+ .column.middle 
+ {
+   flex: 2;
+   text-align: center;
+ }
+ footer 
+ {
+    padding: 10px;
+    text-align: center;
+  
+  }
+  @media (max-width: 600px) 
+  {
+    .row 
+    {
+      flex-direction: column;
+    }
+  }
+  
+  nav
+  {
+      overflow: hidden;
+      background-color: #D72638;
+     
+      
+      
+  }
+  nav a
+  {
+      
+      display: block;
+      color: #F4DBD8;
+      text-align: left;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  nav a:hover
+  {
+      background-color: #F4DBD8;
+      color: black;
+  }
+  nav li
+  {
+      list-style-type: none;
+  }
+ .page-title
+ {
+    font-size: 40px;
+ }
+ input[type="text"], input[type="email"], input[type="tel"]
+ {
+    margin: 50px auto;
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #211A1D;
+    background: transparent;
+	margin-bottom: 10px;
+    height: 45px;
+    font-size: larger;
+    text-align: center;
+ }
+ input[type="button"], input[type="submit"] 
+ {
+    background-color: #211A1D;
+    display: inline-block;
+    cursor: pointer;
+    color:#F4DBD8;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-decoration: none;
+ }
+ input[type="button"]:hover, input[type="submit"]:hover 
+ {
+    background-color: #CAD5CA ;
+    color: #211A1D;
+ }
+
+ul, li
+{
+    text-align: left;
+    list-style-position: inside;
+    
+    padding-top: 5px;
+   
+}
+figure
+ {
+    border: medium #211A1D solid;
+    padding-top: 0;
+    display: table;
+    border-top: none;
+  }
+  figcaption 
+  {
+    padding: 0.5em;
+    display: table-caption;
+  caption-side: top;
+  border: medium #211A1D solid;
+  border-bottom: none;
+
+  }

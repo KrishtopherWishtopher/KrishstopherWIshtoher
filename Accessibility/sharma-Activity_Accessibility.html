@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Testing website for accessibility.">
+
+  <!-- css -->
+  <link rel="stylesheet" href="sharma-Activity_Accessibility.css">
+  <title>Test For Accessibility</title>
+
+</head>
+
+<body>
+  <header>
+    <h1>Candle Delight</h1>
+  </header>
+  <main>
+
+    <table class="center">
+
+      <caption>Candles</caption>
+      <thead>
+        <tr>
+          <!-- identify table headers <th> with scope attribute -->
+          <th type="candles">TYPE</th>
+          <th type="images">PRODUCT</th>
+          <th type="orderedList">FEATURES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Birthday Candles</th>
+          <td><img src="images/Birthday-Candles.jpg" alt="Birthday-Candles"></td>
+          <td>
+            <ol>
+              <li>Comes in different colors</li>
+              <li>Sleek and slender design</li>
+              <li>personalize birthdays</li>
+            </ol>
+          </td>
+
+        </tr>
+        <tr>
+          <th>Votives</th>
+          <td><img src="images/voltives.jpeg" alt="Voltives"></td>
+          <td>
+            <ol>
+              <li>Inexpensive and easy to use</li>
+              <li>longer burn times</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <th>Taper Candles</th>
+          <td><img src="images/taper-candles.jpg" alt="Taper"></td>
+          <td>
+            <ol>
+              <li>Known as window candles</li>
+              <li>Long construction adds dimension to table tops</li>
+            </ol>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--Add the form here-->
+    <h2>Enter your name and phone number to win a gift!</h2>
+    <form method="post" action="#">
+      <fieldset>
+        <label for="name">Your Name: </label>
+        <input id="name" name="name" type="text" aria-required="true"/>
+        <label for="number">Your Number: </label>
+        <input id="number" name="number" type="number" aria-required="true"/>
+        <input type="submit" value="Submit" action="#">
+
+      </fieldset>
+    </form>
+
+
+    <div class="whitespace"></div>
+    <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+    <div class="whitespace"></div>
+
+    <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
+      color and background color passes WCAG standard!</a>
+  </main>
+
+  <footer>
+    <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+  </footer>
+</body>
+
+</html>

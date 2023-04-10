@@ -6,13 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITIS 3135 | Krish Sharma | Kind Sloth | Polygon</title>
+    <title>ITIS 3135 | Krish Sharma | Kind Sloth | Arrays</title>
     <link href="styles/default.css" rel=stylesheet>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <script src="skripts/polySkript.js"></script>
+    <script src="skripts/arrays.js"></script>
 </head>
-
-
 
 <!--start of the body aka all the content on the page-->
 
@@ -22,13 +20,14 @@
         <h1>Krish Sharma's Kind Sloth</h1>
     </header>
     <!-- this is the navigation! this will be used to navigate!-->
+   
 
     <!-- this is the main content of the page-->
     <main>
         <div class="row">
 
             <div class="column side">
-            <nav>
+         <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="intro.html">Introduction</a></li>
@@ -59,20 +58,39 @@
         </ul>
         
     </nav>
-
         
             </div>
         
             <div class="column middle">
-                <h2>Kind sloth's Polygon!</h2>
-        <p>The sloth would like a number between 1 and 10: <input type="number" id="num" min="1" max="10" required></p>
-        <button type="button" onclick="getShape()">Submit</button>
-        <p id="shapeName"></p>
+                <h2>Array's employees and salaries</h2>
+        <fieldset>
 
+       
+        <h3>Display Employees</h3>
+        <button onclick="employeeDropDown()">Display Employees In Dropdown</button>
+        <select id="employees"></select>
+
+        <h3>Display Results</h3> <button onclick="displayResults()">Display Results</button>
+        <div id="results"></div>
+
+        <h3>Display Salary</h3> <button onclick="displaySalary()">Display Salary</button>
+        <table id="result_table"></table>
+
+        <h3>Add Salary</h3> 
+        <label>Enter Name : <input type="text" id="newEmployee" required autofocus></label> <br> 
+        <label>Enter Salary : <input type="number" id="newSalary" required></label><br> 
+        <button onclick="addSalary()">Add Salary</button>
+        </fieldset>
+     
         
             </div>
         
         </div>
+
+
+
+
+
 
     </main>
 
@@ -83,7 +101,6 @@
         <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
     </footer>
 </body>
-
 
 
 
