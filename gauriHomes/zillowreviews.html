@@ -5,9 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/default.css" rel=stylesheet>
+    <link href="styles/jquery.bxslider.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/flavicon.ico">
+
+    <script src="scripts/jquery-3.6.4.min.js"></script>
+    <script src="scripts/jquery.bxslider.js"></script>
+    <script src="scripts/slideShow.js"></script>
+
+
     <title>Gauri Homes | Recently Sold</title>
 </head>
 <body>
@@ -33,18 +41,13 @@
 
     <div class="column middle">
         <h2 class="page-title">Recently Sold</h2>
-        <figure>
-            <figcaption>2558 Weymoth Rd, Winston Salem, NC, 27103</figcaption>
-            <img src="images/sel1.png" alt="house">
-        </figure>
-        <figure>
-            <figcaption>2332 W Vandalia Rd UNIT C, Greensboro, NC 27407</figcaption>
-            <img src="images/sel2.png" alt="house">
-        </figure>
-        <figure>
-            <figcaption>117 Sidney St, Lexington, NC 27295</figcaption>
-            <img src="images/sel3.png" alt="house">
-        </figure>
+        <ul id="slider">
+            <li><img src="images/sel1.png" alt="house" title="2558 Weymoth Rd, Winston Salem, NC, 27103"></li>
+            <li><img src="images/sel2.png" alt="house" title="2332 W Vandalia Rd UNIT C, Greensboro, NC 27407"></li>
+            <li><img src="images/sel3.png" alt="house" title="117 Sidney St, Lexington, NC 27295"></li>
+        </ul>
+        
+        <p id="pager"></p>
 
 
     </div>

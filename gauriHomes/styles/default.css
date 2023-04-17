@@ -142,3 +142,14 @@ figure
   border-bottom: none;
 
   }
+
+#pager
+{
+text-align: center;
+font-size: 90%;
+color: #D72638;
+}
+.bx-wrapper 
+{
+margin-bottom: 20px;
+}
