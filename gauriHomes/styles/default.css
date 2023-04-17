@@ -45,7 +45,10 @@ header
  footer 
  {
     padding: 10px;
-    text-align: center;
+    text-align: left;
+    border-top:medium#211A1D solid;
+    margin-top: 300px;
+    
   
   }
   @media (max-width: 600px) 
@@ -152,4 +155,14 @@ color: #D72638;
 .bx-wrapper 
 {
 margin-bottom: 20px;
+}
+footer a:link
+{
+    text-decoration: none;
+    color: #D72638 ;
+}
+footer a:visited
+{
+    text-decoration: none;
+    color:#D72638;
 }
