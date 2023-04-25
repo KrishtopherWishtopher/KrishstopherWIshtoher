@@ -1,117 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- this is the head -->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>ITIS 3135 | Krish Sharma | Kind Sloth | Slideshow</title>
     <link href="styles/default.css" rel=stylesheet>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <script
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  crossorigin="anonymous"></script>
-  
+
+    <script src="skripts/jquery-3.6.4.min.js"></script>
+    <script src="skripts/dynamic.js"></script>
     <script src="skripts/slideShow.js"></script>
 </head>
 
-<!--start of the body aka all the content on the page-->
-
 <body>
-    <!--this is the header, aka the big test at the start of the page. An intro if you will -->
-    <header>
-        <h1>Krish Sharma's Kind Sloth</h1>
-    </header>
-    <!-- this is the navigation! this will be used to navigate!-->
+ 
+    <header id="dynamicHeader"></header>
 
-
-    <!-- this is the main content of the page-->
     <main>
         <div class="row">
 
             <div class="column side">
-            <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="intro.html">Introduction</a></li>
-            <li><a href="tables.html">Tables</a></li>
-            <li><a href="forms.html">forms</a></li>
-            <li><a href="act4.html">act4</a></li>
-            <li><a href="website_evaluations.html">Website Evaluations</a></li>
-            
-            <li><a href="firstScripts.html">First scripts</a></li>
-            <li><a href="calculator.html">Calculator Try</a></li>
-            <li><a href="calculator_fcc.html">Calculator FCC</a></li>
-            <li><a href="polygon.html">Polygons</a></li>
-            
-            <li><a href="arrays.html">Arrays</a></li>
-            <li><a href="contract.html">Contract</a></li>
-            <li><a href="slideshow.html">Slideshow</a></li>
-            <li><a href="project1.html">Project #1</a></li>
+                <nav id="nav1"></nav>
+                <nav class="nav2" id="nav2"></nav>
 
-        </ul>
-    </nav>
-    <nav class="nav2">
-        <ul>
-            <li><a href="Accessibility/sharma-Activity_Accessibility.html">Accessibility</a></li>
-            <li><a href="stuff/g0adD & W3baite.htm">Bad Website</a></li>
-            <li><a href="hobby/hobby.html#a">Hobby Site!</a></li>
-            <li><a href="gauriHomes/index.html">Gauri Homes</a></li>
-            <li><a href="Activity11.html">Activity 11</a></li>
-            <li><a href="Activity12.html">Activity 12</a></li>
-            <li><a href="Activity13/Activity13.html">Activity 13</a></li>
-            <li><a href="Activity14/Activity14.html">Activity 14</a></li>
 
-        </ul>
-        
-    </nav>
-
-        
             </div>
-        
+
             <div class="column middle">
-        <h2>Slideshow</h2>
-        <div class="slideShowContainer">
-            <div class="slider-outer">
-                <img src="images/leftArrow.png" class="prev" alt="previous">
-                <div class="slider-inner">
-                    <img src="images/sloth1.jpg" class="active" alt="sloth image" title="BRO I HATE THIS GUY FR XDD ">
-                    <img src="images/sloth2.jpg" alt="sloth image"
-                        title="WELL I JUST CANT CONVINCE MYSELF. I COULDNT LIVE WITH NO ONE ELSE. AND I CAN ONLY PLAY THAT PART. AND SIT AND NURSE MY BROKEN HEART. SO LONLEYY SO LONEYLL SO LONLEYYYY - The Police">
-                    <img src="images/sloth3.jfif" alt="sloth image"
-                        title="I GUESS YOU CALL IT COWARDESS BUT IM NOT PREPARED TO GO ON LIKE THISSSSS - THE POLICE">
-                    <img src="images/sloth4.jfif" alt="sloth image"
-                        title="I cant even drive. Might just die in this sedan tbh">
-                    <img src="images/sloth5.jpg" alt="sloth image"
-                        title="I feel bad because over the summer my and my friends spent an hour looking at the lemurs in the greensboro science center and a bunch of people couldnt see them past us.">
-                    <img src="images/sloth6.jpg" alt="sloth image"
-                        title="The same story with the lemurs but with the gibbons too but tbh It was worth it.">
+                <h2>Slideshow</h2>
+                <div class="slideShowContainer">
+                    <div class="slider-outer">
+                        <img src="images/leftArrow.png" class="prev" alt="previous">
+                        <div class="slider-inner">
+                            <img src="images/sloth1.jpg" class="active" alt="sloth image"
+                                title="BRO I HATE THIS GUY FR XDD ">
+                            <img src="images/sloth2.jpg" alt="sloth image"
+                                title="WELL I JUST CANT CONVINCE MYSELF. I COULDNT LIVE WITH NO ONE ELSE. AND I CAN ONLY PLAY THAT PART. AND SIT AND NURSE MY BROKEN HEART. SO LONLEYY SO LONEYLL SO LONLEYYYY - The Police">
+                            <img src="images/sloth3.jfif" alt="sloth image"
+                                title="I GUESS YOU CALL IT COWARDESS BUT IM NOT PREPARED TO GO ON LIKE THISSSSS - THE POLICE">
+                            <img src="images/sloth4.jfif" alt="sloth image"
+                                title="I cant even drive. Might just die in this sedan tbh">
+                            <img src="images/sloth5.jpg" alt="sloth image"
+                                title="I feel bad because over the summer my and my friends spent an hour looking at the lemurs in the greensboro science center and a bunch of people couldnt see them past us.">
+                            <img src="images/sloth6.jpg" alt="sloth image"
+                                title="The same story with the lemurs but with the gibbons too but tbh It was worth it.">
+                        </div>
+                        <img src="images/rightArrow.png" class="next" alt="next">
+                    </div>
                 </div>
-                <img src="images/rightArrow.png" class="next" alt="next">
-            </div>
-        </div>
-        
-            </div>
-        
-        </div>
-        
 
+            </div>
 
+        </div>
 
     </main>
 
-    <footer>
-        <P>Designed by <a href="ksharma.llc/llcstart.html">KsharmaLLC</a> @2023</P>
-        <p>Here's a link to a Song - <a target="_blank" href="https://www.youtube.com/watch?v=i-0ZFJZEvuU">CLICK HERE!</a></p>
-        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
-    </footer>
+    <footer id="dynamicFooter"></footer>
 </body>
-
-
-
-
 
 </html>
