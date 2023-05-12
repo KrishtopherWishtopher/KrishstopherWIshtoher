@@ -42,6 +42,13 @@ header
    flex: 2;
    text-align: center;
  }
+ .column.right
+ {
+    
+    flex:2;
+    text-align: center;
+    margin-top: 50px;
+ }
  footer 
  {
     padding: 10px;
