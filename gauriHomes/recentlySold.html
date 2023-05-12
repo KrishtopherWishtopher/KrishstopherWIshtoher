@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/default.css" rel=stylesheet>
+    <link href="styles/jquery.bxslider.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
@@ -12,14 +13,15 @@
 
     <script src="scripts/jquery-3.6.4.min.js"></script>
     <script src="scripts/dynamic.js"></script>
-    <script src="scripts/forIndex.js"></script>
+    <script src="scripts/jquery.bxslider.js"></script>
+    <script src="scripts/slideShow.js"></script>
 
-    <title>Gauri Homes | HOME</title>
+
+    <title>Gauri Homes | Recently Sold</title>
 </head>
 <body>
 
-<header><h1>Gauri Sharma with Triad Realty Xperts</h1>
-</header>
+<header><h1>Gauri Sharma with Triad Realty Xperts</h1></header>
 <main>
 
 
@@ -31,29 +33,20 @@
     </div>
 
     <div class="column middle">
-        <h2 class="page-title">Welcome</h2>
-       <h3>I specialize in: </h3>
-       <ul>
-        <li>Foreclosure's</li>
-        <li>Buyer's agent</li>
-        <li>Listing agent</li>
-        <li>Relocation</li>
-        <li>Landlords</li>
-       </ul>
+        <h2 class="page-title">Recently Sold</h2>
+        <ul id="slider">
+            <li><img src="images/sel1.png" alt="house" title="2558 Weymoth Rd, Winston Salem, NC, 27103"></li>
+            <li><img src="images/sel2.png" alt="house" title="2332 W Vandalia Rd UNIT C, Greensboro, NC 27407"></li>
+            <li><img src="images/sel3.png" alt="house" title="117 Sidney St, Lexington, NC 27295"></li>
+        </ul>
+        
+        <p id="pager"></p>
 
-       <div id="aboutMe"></div>
-            
 
     </div>
 
 
     <div class="column side">
-
-        <figure>
-            <figcaption></figcaption>
-            <img src="images/Gauri Realtor Christmas.jpg" alt="GauriSharma">
-            
-        </figure>
         
 
 
@@ -71,9 +64,7 @@
 
 </main>
 
-<footer id="footerDynamic"></footer></footer>
 
+<footer id="footerDynamic"></footer>
 </body>
-
-
 </html>

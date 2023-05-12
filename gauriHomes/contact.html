@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/flavicon.ico">
 
+    <script src="scripts/jquery-3.6.4.min.js"></script>
+    <script src="scripts/dynamic.js"></script>
+
     <title>Gauri Homes | CONTACT</title>
 </head>
 <body>
@@ -22,15 +25,7 @@
 
 
     <div class="column side">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="faq.html">Frequently asked questions</a></li>
-                <li><a href="newsLetterSignup.html">Sign up for our newsletter!</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="zillowreviews.html">Recently Sold</a></li>
-            </ul>
-        </nav>
+        <nav id="navDynamic"></nav>
     </div>
 
     <div class="column middle">
@@ -41,7 +36,7 @@
             <input type="text" id="lastName" name="LastName" placeholder="Last Name" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone Number" required>
-            <input type="button" value="Sign Up!">
+            <input type="button" value="Contact Us!">
     </form>
 
     </div>
@@ -72,11 +67,6 @@
 
 
 
-<footer>
-    <P>Designed by <a href="../ksharma.llc/llcstart.html">KsharmaLLC</a> @2023</P>
-    <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
-
-</footer>
+<footer id="footerDynamic"></footer>
 </body>
 </html>
